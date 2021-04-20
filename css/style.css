@@ -10,16 +10,17 @@
 }
 
 .nav {
-  height: 120px;
-}
+  height: 100px;}
 .menu {
   margin-right: 20px;
+  display: flex;
   font-size: 18px;
   float: right;
   text-transform: uppercase;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+color: #ffffff;}
+
 .menu li {
   display: inline;
   margin-left: 20px;
@@ -32,10 +33,11 @@
 
 .grayBox {
   width: 674px;
-  height:flex;
+  height: flex;
   margin: 0 auto;
   background: #e0e0e0;
   border-radius: 10px;
+  margin-top: -20px;
 }
 
 .grayBox h1 {
@@ -90,7 +92,6 @@ display: flex}
 }
 
 .magentaBox {
-  margin-top: -30px;
   width: 100%;
   padding-top: 0px;
   height: 84px flex;
@@ -141,7 +142,7 @@ display: flex}
 }
 
 .row {
-  display: table;
+  display: table; table-layout: auto;
 }
 
 .column {
@@ -210,10 +211,12 @@ display: flex}
 }
 
 .rowSkills {
-  display: table;
+  display:flex;
+  flex-direction: row;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-}
+padding-bottom: 20px;
+  }
 
 .column3 {
   width: 30%;
@@ -237,4 +240,5 @@ font-size: 18px;
       line-height: 20px}
 
 @media only screen and (max-width: 600px) {
+  .grayBox {width: 100%; margin-top: 0px;}
 }
